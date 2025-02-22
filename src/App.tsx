@@ -117,7 +117,7 @@ function Home() {
                 title="Content Forge AI"
                 description="Revolutionary AI-powered tools for effortless content creation, helping you craft engaging copy, blogs, and social media posts with ease"
                 image={contentForgeImage}
-                link="#"
+                link="https://project1212.vercel.app/"
                 delay={0.6}
                 className="h-150"
               />
