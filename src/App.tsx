@@ -181,7 +181,7 @@ function Home() {
             I'm always open to discussing new projects and opportunities.
           </p>
           <motion.a
-            href="/Contact.tsx"
+            href="/Contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-shadow"
