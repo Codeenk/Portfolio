@@ -115,7 +115,7 @@ function Home() {
               />
               <ProjectCard 
                 title="Content Forge AI"
-                description="AI-powered content generation tools with seamless user experience"
+                description="Revolutionary AI-powered tools for effortless content creation, helping you craft engaging copy, blogs, and social media posts with ease."
                 image={contentForgeImage}
                 link="#"
                 delay={0.6}
