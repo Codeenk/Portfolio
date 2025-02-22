@@ -34,7 +34,7 @@ function Home() {
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 text-center"
         >
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 typing-animation">
             Sarvesh Malandkar
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8">
