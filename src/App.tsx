@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Phone } from 'lucide-react';
-import Contact from './Contact.tsx';
+import Contact from './Contact';
 import mcdonaldsImage from "./assets/McD_Mockup.png";
 import contentForgeImage from "./assets/content_forge_ai.png";
 
@@ -34,13 +34,13 @@ function Home() {
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 text-center"
         >
-          <h1 className="text-4xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 justify-center typing-animation">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
             Sarvesh Malandkar
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8">
             Web Developer & UI/UX Designer
           </p>
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-4 flex-wrap">
             <motion.a 
               href="https://github.com/Codeenk"
               target="_blank"
@@ -115,7 +115,7 @@ function Home() {
               />
               <ProjectCard 
                 title="Content Forge AI"
-                description="Revolutionary AI-powered tools for effortless content creation, helping you craft engaging copy, blogs, and social media posts with ease."
+                description="AI-powered content generation tools with seamless user experience"
                 image={contentForgeImage}
                 link="#"
                 delay={0.6}
@@ -181,7 +181,7 @@ function Home() {
             I'm always open to discussing new projects and opportunities.
           </p>
           <motion.a
-            href="/Contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-shadow"
