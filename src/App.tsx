@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Phone } from 'lucide-react';
-import Contact from './Contact';
+import Contact from './Contact.tsx';
 import mcdonaldsImage from "./assets/McD_Mockup.png";
 import contentForgeImage from "./assets/content_forge_ai.png";
 
