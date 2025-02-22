@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.typing-animation {
+  border-right: 2px solid transparent; /* Cursor effect */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow */
+  max-width: 100%; /* Allow full width */
+  animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+  display: inline-block; /* Ensure it behaves like an inline element */
+  text-align: center; /* Center the text */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 57%; /* End with full width */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; /* Invisible cursor */
+  }
+  50% {
+    border-color: white; /* Visible cursor */
+  }
+}
