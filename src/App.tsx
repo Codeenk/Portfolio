@@ -34,7 +34,7 @@ function Home() {
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 text-center"
         >
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 typing-animation">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
             Sarvesh Malandkar
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8">
@@ -78,10 +78,100 @@ function Home() {
         </motion.div>
       </header>
 
-      {/* Projects Section */}
+      {/* Summary Section */}
+      <AnimatePresence>
+        <motion.section 
+          className="py-20"
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              className="text-4xl font-bold mb-12 text-center"
+              variants={fadeInUp}
+              viewport={{ once: false }}
+            >
+              About Me
+            </motion.h2>
+            <motion.p 
+              className="text-xl text-gray-300 max-w-4xl mx-auto text-center leading-relaxed"
+              variants={fadeInUp}
+            >
+              Passionate Full-Stack Web Developer and UI/UX Designer skilled in building intuitive, responsive web applications using React.js, TypeScript, Node.js, and MySQL. Experienced in designing user-friendly interfaces with Figma and implementing scalable backends with RESTful APIs. Currently pursuing a Bachelor's degree in Information Technology at Atharva College of Engineering, with an expected graduation in 2027.
+            </motion.p>
+          </div>
+        </motion.section>
+      </AnimatePresence>
+
+      {/* Experience Section */}
       <AnimatePresence>
         <motion.section 
           className="py-20 bg-gray-800/50"
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              className="text-4xl font-bold mb-12 text-center"
+              variants={fadeInUp}
+              viewport={{ once: false }}
+            >
+              Experience & Education
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <motion.div 
+                className="bg-gray-700/50 p-8 rounded-xl"
+                variants={fadeInUp}
+              >
+                <h3 className="text-2xl font-bold mb-4">Previous Roles</h3>
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold text-blue-400">Webmaster Volunteer</h4>
+                  <p className="text-gray-300">IEEE Techithon College Fest</p>
+                  <p className="text-gray-400 mt-2">Managing and maintaining the official website for IEEE Techithon, implementing responsive design principles and ensuring optimal user experience.</p>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-400">Digital Creative Volunteer</h4>
+                  <p className="text-gray-300">Rhythm Ember 2024, College Fest</p>
+                  <p className="text-gray-400 mt-2">Creating digital assets and maintaining web presence for the college's annual cultural festival.</p>
+                </div>
+              </motion.div>
+              
+              <motion.div 
+                className="bg-gray-700/50 p-8 rounded-xl"
+                variants={fadeInUp}
+              >
+                <h3 className="text-2xl font-bold mb-4">Education</h3>
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold text-blue-400">Bachelor of Engineering in Information Technology</h4>
+                  <p className="text-gray-300">Atharva College of Engineering, Malad</p>
+                  <p className="text-gray-400">Expected Graduation: 2027</p>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-400">Certifications</h4>
+                  <ul className="text-gray-300 list-disc list-inside">
+                    <li>AWS APAC Solutions Architecture Virtual Experience</li>
+                    <li>UI/UX Design (Figma, Adobe XD)</li>
+                    <li>Advanced Web Development</li>
+                  </ul>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </motion.section>
+      </AnimatePresence>
+
+      {/* Projects Section */}
+      <AnimatePresence>
+        <motion.section 
+          className="py-20"
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
@@ -115,7 +205,7 @@ function Home() {
               />
               <ProjectCard 
                 title="Content Forge AI"
-                description="Revolutionary AI-powered tools for effortless content creation, helping you craft engaging copy, blogs, and social media posts with ease"
+                description="AI-powered tools for effortless content creation, helping you craft engaging copy, blogs, and social media posts with ease"
                 image={contentForgeImage}
                 link="https://project1212.vercel.app/"
                 delay={0.6}
@@ -129,7 +219,7 @@ function Home() {
       {/* Skills Section */}
       <AnimatePresence>
         <motion.section 
-          className="py-20"
+          className="py-20 bg-gray-800/50"
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
@@ -167,7 +257,7 @@ function Home() {
       </AnimatePresence>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gray-800/50">
+      <section className="py-20">
         <div className="container mx-auto px-4 text-center">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
